@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms (In progress) </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">    
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Cadastro de usuário</h2>
+        </div>
+        <form id="form" class="form">
+
+            <div class="row">
+        <div class="form-control">  
+        <label for="Primeiro Nome"> Primeiro Nome</label>
+        <input type="text" id="primeironome">
+        <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small> 
+   </div>
+
+   <div class="form-control"> 
+        <label for="ultimo nome"> Último Nome</label>
+        <input type="text" id="ultimonome">
+        <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small> 
+   </div>
+</div>
+
+ <div class="row">
+   <div class="form-control">
+    <label for="email"> E-mail</label>
+    <input type="text" id="email">
+    <i class="fas fa-exclamation-circle"></i>
+      <i class="fas fa-check-circle"></i>
+      <small>Mensagem de erro</small> 
+</div>
+
+
+<div class="form-control">
+    <label for="senha"> Senha</label>
+    <input type="password" id="senha">
+    <i class="fas fa-exclamation-circle"></i>
+      <i class="fas fa-check-circle"></i>
+      <small>Mensagem de erro</small> 
+</div>
+</div>
+
+<div class="row">
+<div class="form-control">
+    <label for="endereco"> Endereço</label>
+    <input type="text" id="endereco">
+    <i class="fas fa-exclamation-circle"></i>
+      <i class="fas fa-check-circle"></i>
+      <small>Mensagem de erro</small> 
+</div>
+
+<div class="form-control">
+    <label for="numero"> Número</label>
+    <input type="tel" id="numero">
+    <i class="fas fa-exclamation-circle"></i>
+      <i class="fas fa-check-circle"></i>
+      <small>Mensagem de erro</small> 
+</div>
+</div>
+
+<div class="row">
+<div class="form-control">
+    <label for="estado">Estado:</label>
+	<select id="estado" onchange="buscarCidades()">
+		<option value="">Selecione um estado</option>
+    </select>
+    <i class="fas fa-exclamation-circle"></i>
+      <i class="fas fa-check-circle"></i>
+      <small>Mensagem de erro</small> 
+</div>
+
+<div class="form-control">
+    <label for="cidade">Cidade:</label>
+	<select id="cidade" onchange="buscarBairros()">
+		<option value="">Selecione uma cidade</option>
+    </select>
+    <i class="fas fa-exclamation-circle"></i>
+      <i class="fas fa-check-circle"></i>
+      <small>Mensagem de erro</small> 
+</div>
+
+<div class="form-control">
+    <label for="bairro">Bairro:</label>
+	<select id="bairro">
+		<option value="">Selecione um bairro</option>
+    </select>
+    <i class="fas fa-exclamation-circle"></i>
+      <i class="fas fa-check-circle"></i>
+      <small>Mensagem de erro</small> 
+</div>
+</div>
+
+<div class="button">
+<button type="submit">Cadastrar</button>
+  </div> 
+</form>
+ </div>
+
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="scripts.js"></script>
+
+
+<script type="text/javascript" src="app.js"></script>  
+
+</body>
+</html>
